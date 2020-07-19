@@ -29,7 +29,7 @@ export const HeaderWrapper = styled.div<{ headerCustomStyles?: FlattenSimpleInte
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 15%;
+  height: 10%;
   padding: ${rem(10)};
   background: ${ color.white.WhiteSmoke };
   ${ props => props.headerCustomStyles }

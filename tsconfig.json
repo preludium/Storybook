@@ -27,8 +27,15 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "noImplicitAny": false,
-    "jsx": "react"
+    "noImplicitAny": true,
+    "jsx": "react",
+    "baseUrl": "src",
+    "paths": {
+      "@components/*": ["components/*"],
+      "@misc/*": ["misc/*"],
+      "@stories/*": ["stories/*"],
+      "@utils/*": ["utils/*"]
+    }
   },
   "include": [
     "src"

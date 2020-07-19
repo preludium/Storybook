@@ -1,5 +1,5 @@
 import React from "react";
 import { addDecorator } from "@storybook/react";
-import DefaultDecorator from "../src/layout/DefaultDecorator";
+import Layout from "../src/components/Layout";
 
-addDecorator(storyFn => <DefaultDecorator>{storyFn()}</DefaultDecorator>);
+addDecorator((storyFn) => <Layout>{storyFn()}</Layout>);
