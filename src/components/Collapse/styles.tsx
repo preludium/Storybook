@@ -1,4 +1,4 @@
-import Styled, {css} from "styled-components";
+import Styled, { css } from "styled-components";
 
 const hideStyles = css`
     max-height: 0;
