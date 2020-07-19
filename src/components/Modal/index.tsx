@@ -25,3 +25,5 @@ const Modal: FunctionComponent<PropsWithChildren<ModalProps>> = (props) => {
         </Wrapper>
     );
 };
+
+export default Modal;

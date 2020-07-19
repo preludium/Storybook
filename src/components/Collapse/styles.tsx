@@ -1,4 +1,4 @@
-import Styled, { css } from "styled-components";
+import styled, { css } from "styled-components";
 
 const hideStyles = css`
     max-height: 0;
@@ -11,6 +11,6 @@ const showStyles = css`
     transition: max-height 0.3s ease-in;
 `;
 
-export const Wrapper = Styled.div<{ open: boolean, timeout: number }>`
+export const Wrapper = styled.div<{ open: boolean, timeout: number }>`
     ${props => !props.open ? hideStyles : showStyles}
 `;
