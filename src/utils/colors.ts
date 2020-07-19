@@ -23,7 +23,7 @@ const purple = {
     MediumOrchid, DarkOrchid, DarkViolet, BlueViolet, DarkMagenta,
     Purple, MediumPurple, MediumSlateBlue, SlateBlue, DarkSlateBlue,
     RebeccaPurple, Indigo
-}
+};
 
 const CadetBlue = "#5F9EA0";
 const SteelBlue = "#4682B4";
@@ -78,7 +78,7 @@ const DarkKhaki = "#BDB76B";
 const yellow = {
     Gold, Yellow, LightYellow, LemonChiffon, LightGoldenRodYellow,
     PapayaWhip, Moccasin, PeachPuff, PaleGoldenRod, Khaki, DarkKhaki
-}
+};
 
 const LawnGreen = "#7CFC00";
 const Lime = "#00FF00";
@@ -192,3 +192,21 @@ const color = {
 };
 
 export default color;
+
+interface RGB {
+    red: number;
+    green: number;
+    blue: number;
+}
+
+const hex2Rgb = (color: string): RGB => {
+    const red = parseInt(color.substring(1, 3), 16);
+    const green = parseInt(color.substring(3, 5), 16);
+    const blue = parseInt(color.substring(5, 7), 16);
+    return { red, green, blue };
+};
+
+export const transparent = (hexColor: string, alpha: number): string => {
+    const rgb = hex2Rgb(hexColor);
+    return `rgba(${ rgb.red }, ${ rgb.green }, ${ rgb.blue }, ${ alpha })`;
+};
