@@ -7,6 +7,7 @@ const Collapse: FunctionComponent<CollapseProps> = (props) => {
         <Wrapper open={ props.open }
                  timeout={ props.timeout }
                  maxHeight={ props.maxHeight }
+                 customStyles={ props.customStyles }
         >
             { props.children }
         </Wrapper>

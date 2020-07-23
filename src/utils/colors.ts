@@ -203,7 +203,7 @@ const hex2Rgb = (color: string): RGB => {
     const red = parseInt(color.substring(1, 3), 16);
     const green = parseInt(color.substring(3, 5), 16);
     const blue = parseInt(color.substring(5, 7), 16);
-    return { red, green, blue };
+    return {red, green, blue};
 };
 
 export const transparent = (hexColor: string, alpha: number): string => {

@@ -1,14 +1,20 @@
 import React, { FunctionComponent, useState } from "react";
 import { default as CollapseComponent } from "@components/Collapse";
+import styled from "styled-components";
 
 export default {
     title: "Components"
 };
+const Wrapper = styled.div`
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+`;
 
 export const Collapse: FunctionComponent = () => {
-    const [open, setOpen] = useState(true);
+    const [open, setOpen] = useState(false);
     return (
-        <>
+        <Wrapper>
             <button onClick={ () => setOpen(!open) }>
                 Collapse
             </button>
@@ -62,6 +68,6 @@ export const Collapse: FunctionComponent = () => {
                     </p>
                 </div>
             </CollapseComponent>
-        </>
+        </Wrapper>
     );
 };

@@ -1,12 +1,14 @@
 import React, { FunctionComponent } from "react";
 import { LayoutProps } from "./types";
-import { Wrapper } from "./styles";
+import { LayoutWrapper } from "./styles";
+import { GlobalStyle } from "@utils/GlobalStyle";
 
 const Layout: FunctionComponent<LayoutProps> = (props) => {
     return (
-        <Wrapper>
-            {props.children}
-        </Wrapper>
+        <LayoutWrapper>
+            <GlobalStyle/>
+            { props.children }
+        </LayoutWrapper>
     );
 };
 

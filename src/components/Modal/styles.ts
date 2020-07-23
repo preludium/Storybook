@@ -1,6 +1,6 @@
 import styled, { FlattenSimpleInterpolation } from "styled-components";
-import color, { transparent } from "../../utils/colors";
-import rem from "../../utils/sizes";
+import color, { transparent } from "@utils/colors";
+import rem from "@utils/sizes";
 
 export const Wrapper = styled.div`
   position: absolute;

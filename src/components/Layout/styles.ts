@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import color from "@utils/colors";
+import color, { transparent } from "@utils/colors";
+import rem from "@utils/sizes";
 
-export const Wrapper = styled.div`
-    width: fit-content;
-    background: ${color.white.White};
-    * {
-        font-family: "Open Sans", sans-serif;
-    }
+export const LayoutWrapper = styled.div`
+    display: flex;
+    justify-content: center;
+    padding: ${ rem(16) };
+    background: ${ color.white.White };
+    box-shadow: 0 0 ${ rem(12) } 0 ${ transparent(color.gray.Black, 0.05) };
 `;
-
