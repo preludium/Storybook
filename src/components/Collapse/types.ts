@@ -1,4 +1,5 @@
 export interface CollapseProps {
     open: boolean;
-    timeout: number;
+    timeout?: number;
+    maxHeight?: number;
 }

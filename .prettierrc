@@ -1,9 +1,0 @@
-{
-  "tabWidth": 4,
-  "useTabs": false,
-  "eslintIntegration": true,
-  "trailingComma": "none",
-	"bracketSpacing": true,
-	"jsxBracketSameLine": false,
-  "semi": true
-}

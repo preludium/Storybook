@@ -1,16 +1,14 @@
-import React, { FunctionComponent, useRef } from "react";
+import React, { FunctionComponent } from "react";
 import { CollapseProps } from "./types";
 import { Wrapper } from "./styles";
 
 const Collapse: FunctionComponent<CollapseProps> = (props) => {
-    const content = useRef(null);
-
     return (
-        <Wrapper ref={content}
-                 open={props.open}
-                 timeout={props.timeout}
+        <Wrapper open={ props.open }
+                 timeout={ props.timeout }
+                 maxHeight={ props.maxHeight }
         >
-            {props.children}
+            { props.children }
         </Wrapper>
     );
 };
