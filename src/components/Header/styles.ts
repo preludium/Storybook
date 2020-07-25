@@ -21,28 +21,35 @@ export const MenuWrapper = styled.div`
 `;
 
 const menuOptionHoverStyles = css`
-  background: ${ transparent(color.cyan.DarkTurquoise, 0.7) };
+  background: ${ color.cyan.DarkTurquoise };
   cursor: pointer;
 `;
 
-export const MenuOption = styled.div<{ isHovering: boolean }>`
+export const MenuOption = styled.div<{ isHovering?: boolean }>`
   display: flex;
   justify-content: center;
   align-items: center;
   width: ${ rem(70) };
   padding: ${ rem(10) } ${ rem(30) };
   background: ${ color.cyan.MediumTurquoise };
+  cursor: default;
   transition: background 0.3s ease-in-out;
   ${ props => props.isHovering && menuOptionHoverStyles }
+  &:hover { ${menuOptionHoverStyles} }
 `;
 
 const chevronHoverStyles = css`
   transform: rotate(-90deg);
 `;
 
-export const ChevronWrapper = styled.div<{ isHovering: boolean }>`
+export const ChevronWrapper = styled.div<{ isHovering?: boolean }>`
   display: flex;
   align-items: center;
   transition: transform 0.3s ease-in-out;
   ${ props => props.isHovering && chevronHoverStyles }
+`;
+
+export const StyledLink = styled.a`
+  display: flex;
+  align-items: center;
 `;

@@ -3,6 +3,7 @@ import { HeaderProps } from "./types";
 import {
     HeaderWrapper, MenuWrapper,
     MenuOption, ChevronWrapper,
+    StyledLink
 } from "./styles";
 import Dropdown from "./Dropdown";
 import { DropdownOption } from "./Dropdown/types";
@@ -37,6 +38,16 @@ const Header: FunctionComponent<HeaderProps> = () => {
     return (
         <HeaderWrapper>
             <MenuWrapper>
+                <MenuOption>
+                    <StyledLink href="#">
+                        Home
+                    </StyledLink>
+                </MenuOption>
+                <MenuOption>
+                    <StyledLink href="#">
+                        Profile
+                    </StyledLink>
+                </MenuOption>
                 <MenuOption onMouseEnter={() => setShowDropdown(true)}
                             onMouseLeave={() => setShowDropdown(false)}
                             isHovering={showDropdown}

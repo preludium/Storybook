@@ -3,8 +3,9 @@ import { default as CollapseComponent } from "@components/Collapse";
 import styled from "styled-components";
 
 export default {
-    title: "Components"
+    title: "Collapse"
 };
+
 const Wrapper = styled.div`
     display: flex;
     justify-content: center;

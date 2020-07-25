@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
   bottom: 0;
   left: 0;
   right: 0;
-  background: ${ transparent(color.gray.Black, 0.4) };
+  background: ${ transparent(color.gray.Black, 0.6) };
 `;
 
 export const Window = styled.div<{ windowCustomStyles?: FlattenSimpleInterpolation }>`
