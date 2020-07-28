@@ -3,7 +3,7 @@ import { HeaderProps } from "./types";
 import {
     HeaderWrapper, MenuWrapper,
     MenuOption, ChevronWrapper,
-    StyledLink
+    StyledLink, StyledImg
 } from "./styles";
 import Dropdown from "./Dropdown";
 import { DropdownOption } from "./Dropdown/types";
@@ -11,6 +11,7 @@ import { ChevronLeft, InfoOutlined } from "@material-ui/icons";
 import Collapse from "@components/Collapse";
 import { css } from "styled-components";
 import rem from "@utils/sizes";
+import logo from "@utils/resources/logo.png";
 
 const Header: FunctionComponent<HeaderProps> = () => {
     const [showDropdown, setShowDropdown] = useState<boolean>(false);
@@ -37,6 +38,7 @@ const Header: FunctionComponent<HeaderProps> = () => {
 
     return (
         <HeaderWrapper>
+            <StyledImg src={logo} />
             <MenuWrapper>
                 <MenuOption>
                     <StyledLink href="#">

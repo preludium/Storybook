@@ -3,7 +3,7 @@ import rem from "@utils/sizes";
 import color from "@utils/colors";
 
 export const Wrapper = styled.div`
-  background: ${ color.cyan.DarkTurquoise };
+  background: ${ color.gray.Gainsboro };
 `;
 
 export const OptionWrapper = styled.div`
@@ -13,7 +13,7 @@ export const OptionWrapper = styled.div`
   transition: background 0.3s ease-in-out;
   &:hover {
     cursor: pointer;
-    background: ${ color.cyan.MediumTurquoise };
+    background: ${ color.white.WhiteSmoke };
   }
 `;
 
